@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16805c">
+  <title>Aiutatemi a tornare in hotel 😄</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f5;
+      color: #17201c;
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 18px 14px 32px;
+    }
+    .hero {
+      text-align: center;
+      padding: 8px 10px 18px;
+    }
+    .hero img {
+      width: min(240px, 58vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 22px;
+    }
+    .intro {
+      margin: 8px auto 18px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .card {
+      border-radius: 22px;
+      padding: 22px 20px;
+      margin: 16px 0;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    }
+    .it { background: #e5f5ec; }
+    .de { background: #fff5d9; }
+    .en { background: #e5f0fb; }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .flag { font-size: 1.8rem; }
+    .message {
+      font-size: 1.08rem;
+      margin: 0 0 16px;
+    }
+    .address-label {
+      font-weight: 800;
+      margin-bottom: 3px;
+    }
+    .address {
+      margin: 0 0 17px;
+    }
+    .thanks {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin: 16px 0 0;
+    }
+    .maps {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #16805c;
+      font-weight: 800;
+      padding: 12px 17px;
+      border-radius: 13px;
+      margin-top: 4px;
+    }
+    .de .maps { background: #b58900; }
+    .en .maps { background: #145b9c; }
+
+    .hotel {
+      font-weight: 800;
+      margin-top: 15px;
+      font-size: 1.05rem;
+    }
+    .footer {
+      text-align: center;
+      color: #68736e;
+      font-size: .88rem;
+      margin-top: 22px;
+    }
+    @media (max-width: 480px) {
+      .page { padding: 10px 10px 26px; }
+      .card { padding: 18px 16px; }
+      .title { font-size: 1.75rem; }
+      .message, .thanks { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <img src="logo_addio_celibato.png" alt="Foto divertente dell'addio al celibato">
+      <div class="intro">Se mi trovate in difficoltà, sapete già dove portarmi! 😄</div>
+    </header>
+
+    <section class="card it">
+      <h1 class="title"><span class="flag">🇮🇹</span> Ciao!</h1>
+      <p class="message">
+        Se sono disteso da qualche parte, sembro confuso o perso,
+        per favore portatemi all'hotel <strong>MASEVEN Munich Messe Trudering</strong>.
+      </p>
+      <div class="address-label">📍 Indirizzo:</div>
+      <p class="address">
+        Schatzbogen 35, Trudering-Riem<br>
+        81829 Monaco di Baviera, Germania
+      </p>
+      <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=MASEVEN%20Munich%20Messe%20Trudering" target="_blank" rel="noopener">
+        📍 Apri l'hotel in Google Maps
+      </a>
+      <p class="thanks">Grazie mille e scusate per il disturbo!</p>
+    </section>
+
+    <section class="card de">
+      <h1 class="title"><span class="flag">🇩🇪</span> Hallo!</h1>
+      <p class="message">
+        Wenn ich irgendwo liege und verwirrt oder verloren wirke,
+        bringt mich bitte zum <strong>MASEVEN Munich Messe Trudering</strong>.
+      </p>
+      <div class="address-label">📍 Adresse:</div>
+      <p class="address">
+        Schatzbogen 35, Trudering-Riem<br>
+        81829 München, Deutschland
+      </p>
+      <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=MASEVEN%20Munich%20Messe%20Trudering" target="_blank" rel="noopener">
+        📍 Hotel in Google Maps öffnen
+      </a>
+      <p class="thanks">Vielen Dank und entschuldigt bitte die Umstände!</p>
+    </section>
+
+    <section class="card en">
+      <h1 class="title"><span class="flag">🇬🇧</span> Hello!</h1>
+      <p class="message">
+        If I am lying somewhere and seem confused or lost,
+        please take me to the <strong>MASEVEN Munich Messe Trudering</strong>.
+      </p>
+      <div class="address-label">📍 Address:</div>
+      <p class="address">
+        Schatzbogen 35, Trudering-Riem<br>
+        81829 Munich, Germany
+      </p>
+      <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=MASEVEN%20Munich%20Messe%20Trudering" target="_blank" rel="noopener">
+        📍 Open in Google Maps
+      </a>
+      <p class="thanks">Thank you very much, and sorry for the inconvenience!</p>
+    </section>
+
+    <div class="footer">❤️ Grazie per avermi aiutato a tornare sano e salvo in hotel!</div>
+  </main>
+</body>
+</html>
